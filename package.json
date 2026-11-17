@@ -1,0 +1,27 @@
+{
+  "name": "skillmatch-ai",
+  "version": "1.0.0",
+  "description": "SkillMatch AI - Resume & Job Description Matcher using MERN Stack & AI",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "node --watch server/src/server.js",
+    "client": "npm.cmd --prefix client run dev",
+    "dev": "concurrently \"npm.cmd --prefix server run dev\" \"npm.cmd --prefix client run dev\"",
+    "install:all": "npm.cmd --prefix server install && npm.cmd --prefix client install",
+    "test:server": "npm.cmd --prefix server test",
+    "test": "npm.cmd --prefix server test"
+  },
+  "keywords": [
+    "resume-matcher",
+    "job-analysis",
+    "mern",
+    "gemini-ai",
+    "nlp"
+  ],
+  "author": "SkillMatch AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
